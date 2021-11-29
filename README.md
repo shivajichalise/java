@@ -1,7 +1,6 @@
 <img align="left" alt="html5" width="35" src="https://raw.githubusercontent.com/shivajichalise/java/main/images/java_logo.png">
 
 <br />
-<br />
 
 # Java
 
