@@ -2,6 +2,8 @@
 
 ### JDBC
 
+![Screenshot](https://raw.githubusercontent.com/shivajichalise/java/main/assignments/11JDBC/images/eclipse_ss.png)
+
 Steps to make it work:
 1. Edit the database connection string and give it your mariadb database name, username and password.
 ``
