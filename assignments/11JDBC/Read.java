@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 
 public class Read {
 	public Read() throws ClassNotFoundException, SQLException {
+		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/crud_java", "alphajr", "SIKEBRO");
 		

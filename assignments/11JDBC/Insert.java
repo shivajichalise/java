@@ -10,13 +10,11 @@ public class Insert {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/crud_java", "alphajr", "SIKEBRO");
-		
 		String query = "INSERT INTO users (`name`, `age`, `address`) VALUES(?, ?, ?)";
 		PreparedStatement stmt = conn.prepareStatement(query);
-        stmt.setString(1, "Shivaji");
-        stmt.setInt(2, 22);
-        stmt.setString(3, "Srijana Chowk");
-        
+		stmt.setString(1, "Shivaji");
+		stmt.setInt(2, 22);
+		stmt.setString(3, "Srijana Chowk");
         
 		int res = stmt.executeUpdate();
 		

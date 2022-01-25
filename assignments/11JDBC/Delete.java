@@ -18,7 +18,7 @@ public class Delete {
 		
 		String query = "DELETE FROM `users` WHERE `users`.`id` = ?";
 		PreparedStatement stmt = conn.prepareStatement(query);
-        stmt.setInt(1, id);
+		stmt.setInt(1, id);
         
 		int res = stmt.executeUpdate();
 		System.out.println("Number of rows affected = " + res);

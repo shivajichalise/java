@@ -30,9 +30,9 @@ public class Update {
 		
 		String query = "UPDATE `users` SET `name` = ?, `age` = ?, `address` = ? WHERE `users`.`id` = ?";
 		PreparedStatement stmt = conn.prepareStatement(query);
-        stmt.setString(1, name);
-        stmt.setInt(2, age);
-        stmt.setString(3, address);
+		stmt.setString(1, name);
+		stmt.setInt(2, age);
+		stmt.setString(3, address);
 		stmt.setInt(4, id);
         
 		int res = stmt.executeUpdate();
