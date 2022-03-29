@@ -1,5 +1,6 @@
-Suraj Kathmandu 30000
-Dikshyant Pokhara 20000
-Yakeen Kathmandu 10000
-Suresh Damauli 50000
-Shivaji Chitwan 5000
+Name      Address       Salary
+Suraj     Kathmandu     30000
+Dikshyant Pokhara       20000
+Yakeen    Kathmandu     10000
+Suresh    Damauli       50000
+Shivaji   Chitwan       5000
