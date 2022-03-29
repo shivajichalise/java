@@ -1,4 +1,3 @@
-import java.awt.Frame;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -6,7 +5,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseEvent;
 
-public class MousePointerFrame extends Frame implements MouseListener, MouseMotionListener {
+public class MousePointerFrame implements MouseListener, MouseMotionListener {
 
   static JTextField tfield1, tfield2;
 
@@ -27,7 +26,7 @@ public class MousePointerFrame extends Frame implements MouseListener, MouseMoti
     tfield1.setBounds(50, 100, 200, 30);
 
     tfield2 = new JTextField();
-    tfield2.setBounds(50, 150, 200, 30);
+    tfield2.setBounds(50, 150, 300, 30);
 
     p.add(tfield1);
     p.add(tfield2);
