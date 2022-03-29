@@ -3,9 +3,9 @@ import java.awt.Component;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 
-public class horizontalButtonsUsingBoxLayout extends JFrame {
+public class HorizontalButtonsUsingBoxLayout extends JFrame {
 
-  horizontalButtonsUsingBoxLayout() {
+  HorizontalButtonsUsingBoxLayout() {
     JButton btn1 = new JButton("JButton 1");
     btn1.setAlignmentX(Component.CENTER_ALIGNMENT);
 
@@ -34,6 +34,6 @@ public class horizontalButtonsUsingBoxLayout extends JFrame {
   }
 
   public static void main(String[] args) {
-    new horizontalButtonsUsingBoxLayout();
+    new HorizontalButtonsUsingBoxLayout();
   }
 }
