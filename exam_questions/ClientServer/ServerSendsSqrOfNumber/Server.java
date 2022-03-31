@@ -1,26 +1,26 @@
-import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.ServerSocket;
 import java.io.DataInputStream;
-import java.io.IOException;
 import java.io.DataOutputStream;
+import java.io.IOException;
 
-public class Server {
-  public static void main(String[] args) throws IOException {
-    ServerSocket serverSocket = new ServerSocket(8080);
-    Socket socket = serverSocket.accept();
-    System.out.println("Connected!");
+class Server {
+  public static void main(String[] a) throws IOException {
+    ServerSocket ss = new ServerSocket(5000);
+    Socket s = ss.accept();
 
-    DataInputStream dis = new DataInputStream(socket.getInputStream());
-    DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+    DataInputStream dis = new DataInputStream(s.getInputStream());
+    DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 
     int data;
 
     while (true) {
       data = (Integer) dis.readInt();
-
       Integer square = data * data;
+
       dos.writeInt(square);
       dos.flush();
+
     }
   }
 }
