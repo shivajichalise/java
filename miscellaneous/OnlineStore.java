@@ -13,6 +13,9 @@ class Product {
 public class OnlineStore {
 
   public static double totalAmount = 0.0;
+  long a;
+  int b;
+  double c;
 
   public static void listProducts(Product[] products) {
     int i = 1;

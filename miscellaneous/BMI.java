@@ -1,15 +1,16 @@
-import java.util.Scanner;
+import java.util.Scanner; // importing scanner class
+// The Scanner class is used to get user input
 
 public class BMI {
   public static double weight;
   public static double height;
 
-  public static double calculateBMI(double weight, double height) {
-    double bmi = weight / (height * height);
+  public static double calculateBMI(double weight, double height) { // method to calculate BMI
+    double bmi = weight / (height * height); // bmi calculation formula
     return bmi;
   }
 
-  public static void BMIHealth(double bmi) {
+  public static void BMIHealth(double bmi) { // methods that checks health according to bmi provided
     if (bmi < 18.5) {
       System.out.println("You're Underweight");
     } else if (bmi >= 18.5 && bmi <= 24.9) {
@@ -22,10 +23,12 @@ public class BMI {
   }
 
   public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
+    Scanner s = new Scanner(System.in); // Scanner object is initialized with System.in that'll allow us to take input
+                                        // 
+                                        // from user
 
     System.out.println("Enter your weight in kg: ");
-    weight = s.nextDouble();
+    weight = s.nextDouble(); // Reads a double value from the user
 
     System.out.println("Enter your height in meter: ");
     height = s.nextDouble();
@@ -34,6 +37,6 @@ public class BMI {
 
     BMIHealth(calculateBMI(weight, height));
 
-    s.close();
+    s.close(); // closing scanner to prevent memory leak
   }
 }
