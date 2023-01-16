@@ -71,6 +71,7 @@ public class Account { // defining a class
     a.withdraw(2500); // withdrawing amount
     a.deposit(3000);
 
+    System.out.println("Id is: " + a.getId());
     System.out.println("Current balance is: " + a.getBalance());
     System.out.println("Monthly interest rate is: " + a.getMonthlyInterestRate());
     System.out.println("Account was created on: " + a.getCreatedDate());
